@@ -2,7 +2,10 @@ let s;
 const container = document.querySelector('#size'); 
 size.addEventListener('click', (event) => {
     s = prompt("enter size");
-    generate();
+    if(s <= 64)
+        generate();
+    else    
+        alert("Oops, try something lower.");
   });
 
 function generate()
