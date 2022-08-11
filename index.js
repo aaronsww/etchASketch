@@ -6,7 +6,7 @@ size.addEventListener('click', (event) => {
         generate();
     else    
         alert("Oops, try something lower.");
-  });
+});
 
 function generate()
 {
@@ -19,15 +19,16 @@ function generate()
         {     
         const box = document.createElement('div');
         box.textContent = ""+i;
-            box.style.cssText = ' border: 2px solid;'; 
-            box.style.borderColor = "red";
-            row.append(box);
-            /* box.addEventListener('click', (event) => {
-                box.style.cssText = ' background-color: black;';   
-            }); */
-            box.addEventListener('mouseenter', (event) => {
+        row.append(box);
+        box.style.cssText = ' border: 2px solid;'; 
+        box.style.borderColor = "red";
+        /* 
+        box.addEventListener('click', (event) => {
             box.style.cssText = ' background-color: black;';   
-            });
+        }); */
+        box.addEventListener('mouseenter', (event) => {
+        box.style.cssText = ' background-color: green;  border: 2px solid;';   
+        });
         }
     }
 }
