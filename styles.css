@@ -1,3 +1,11 @@
 #container{
     display: flex;
+    background-color: teal;
+    flex-basis: 30px;
+}
+.cool{
+    background-color: black;
+}
+.erase{
+    background-color: white;
 }
