@@ -1,20 +1,12 @@
-let s, c=1;
+let s;
 document.querySelector('#size'); 
 size.addEventListener('click', (event) => {
-    if(c==1){
         s = prompt("enter size");
         if(s <= 64) {
             generate();
-            c++;
         }
         else    
             alert("Oops, try something lower.");
-    }
-    else {
-        s = prompt("enter size");
-        destroy();
-        c++;
-    }
 });
 
 function generate()
@@ -29,18 +21,17 @@ function generate()
             const box = document.createElement('div');
             box.textContent = ""+i;
             row.append(box);
+            box.classList.add("squeeze");
             box.style.cssText = ' border: 2px solid;'; 
             box.style.borderColor = "red";
             box.addEventListener('mouseenter', (event) => {
-            box.classList.add("cool");
+            box.classList.add("fill");
             });
         }
     }       
 }
 
-function destroy(){
-    box.classList.remove("cool");
-}
+
 /*
 box.style.cssText = ' background-color: green;  border: 2px solid;';   
 

@@ -1,7 +1,25 @@
 #container{
     display: flex;
     background-color: teal;
+    height: 960px;
+    width: 960px;
+    align-items: stretch;
+}
+.fill{
+    background-color: black;
+}
+.erase{
+    background-color: white;
+} 
+
+/*
+#container{
+    display: flex;
+    background-color: teal;
     flex-basis: 30px;
+    justify-content: center;
+    width: 960px;
+    height: 960px;
 }
 .cool{
     background-color: black;
@@ -9,3 +27,8 @@
 .erase{
     background-color: white;
 }
+
+div{
+  display: flex;
+  flex-direction: column;
+}*/
