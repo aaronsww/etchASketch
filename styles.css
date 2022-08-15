@@ -1,9 +1,9 @@
 #container{
     display: flex;
+    flex-wrap: wrap;
     background-color: teal;
     height: 960px;
     width: 960px;
-    align-items: stretch;
 }
 .fill{
     background-color: black;
@@ -27,8 +27,4 @@
 .erase{
     background-color: white;
 }
-
-div{
-  display: flex;
-  flex-direction: column;
 }*/

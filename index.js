@@ -21,7 +21,6 @@ function generate()
             const box = document.createElement('div');
             box.textContent = ""+i;
             row.append(box);
-            box.classList.add("squeeze");
             box.style.cssText = ' border: 2px solid;'; 
             box.style.borderColor = "red";
             box.addEventListener('mouseenter', (event) => {
@@ -30,6 +29,7 @@ function generate()
         }
     }       
 }
+
 
 
 /*
