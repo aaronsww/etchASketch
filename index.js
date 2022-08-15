@@ -32,8 +32,7 @@ function generate()
 
 
 
-/*
-box.style.cssText = ' background-color: green;  border: 2px solid;';   
+/*   
 
 
 document.querySelector('#clear'); 
