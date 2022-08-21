@@ -1,14 +1,15 @@
 let row;
 const container = document.querySelector('#container');
+let s=25;
 
 function firstGrid()
 {
-    for(let i=1; i<=25;i++)
+    for(let i=1; i<=s;i++)
     {
         row= document.createElement('div');
         container.append(row);
         row.classList.add("test");
-        for(let j=1;j<=25;j++)
+        for(let j=1;j<=s;j++)
         {     
             const box = document.createElement('div');
             box.textContent = ""+i;
@@ -25,7 +26,6 @@ function firstGrid()
 
 firstGrid();
 
-let s;
 document.querySelector('#size'); 
 size.addEventListener('click', (event) => {
         s = prompt("enter size");
@@ -60,22 +60,18 @@ function generate(s)
     }       
 }
 
-
 document.querySelector('#clear'); 
-clear.addEventListener('click', (event) => { 
+clear.addEventListener('click', eraser);
+
+function eraser()
+{
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => {
         box.style.cssText = ' border: 2px solid; background-color: teal;'; 
         box.style.borderColor = "red";
-    })
-});
-
-/* 
-function erase()
-{
-    const nodelist = document.querySelectorAll('box');
-    nodelist.forEach((box) => {
-    box.classList.remove("cool");
-    });
+        });
+    let rows = container.querySelectorAll('.test')
+    rows.forEach((row) => {row.remove()})
+    generate(s);
 }   
-*/
+
