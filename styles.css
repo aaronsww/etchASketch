@@ -22,19 +22,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     margin-right: 30px;
+    height: 300px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 7px;
 }
-#colorPicker{
-    font-size: 25px;
-    padding: 10px 24px;
-    width: 170px;
-}
-#rgb{
-    font-size: 25px;
-    padding: 10px 24px;
-    width: 170px;
-}
-#clear{
+.allBtn{
     font-size: 25px;
     padding: 10px 24px;
     width: 170px;
