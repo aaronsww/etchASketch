@@ -15,6 +15,7 @@ function firstGrid()
             row.appendChild(box);
             box.style.cssText = ' border: 2px solid;'; 
             box.style.borderColor = "red";
+            box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
             });
@@ -41,7 +42,6 @@ function generate(s)
 {
     for(let i=1; i<=s;i++)
     {
-        //row.querySelector('row');
         const row= document.createElement('div');
         row.classList.add("test");
         container.appendChild(row);
@@ -52,6 +52,7 @@ function generate(s)
             row.append(box);
             box.style.cssText = ' border: 2px solid;'; 
             box.style.borderColor = "red";
+            box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
             });
@@ -60,15 +61,16 @@ function generate(s)
 }
 
 
-/*   
-
-
 document.querySelector('#clear'); 
 clear.addEventListener('click', (event) => { 
-    erase();
+    let boxes = container.querySelectorAll('.erase')
+    boxes.forEach((box) => {
+        box.style.cssText = ' border: 2px solid; background-color: teal;'; 
+        box.style.borderColor = "red";
+    })
 });
 
-
+/* 
 function erase()
 {
     const nodelist = document.querySelectorAll('box');
