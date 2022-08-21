@@ -11,6 +11,7 @@
 .header{
     display: flex;
     justify-content: center;
+    
 }
 .flexMain{
    display: flex;
@@ -20,19 +21,27 @@
 .flexSide{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-right: 30px;
 }
 #colorPicker{
     font-size: 25px;
+    padding: 10px 24px;
+    width: 170px;
 }
 #rgb{
     font-size: 25px;
+    padding: 10px 24px;
+    width: 170px;
 }
 #clear{
     font-size: 25px;
+    padding: 10px 24px;
+    width: 170px;
 }
 #size{
     font-size: 25px;
+    padding: 10px 24px;
 }
 .cr{
     padding: 40px;
