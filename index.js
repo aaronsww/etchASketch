@@ -1,10 +1,13 @@
+let row;
+const container = document.querySelector('#container');
+
 function firstGrid()
 {
     for(let i=1; i<=25;i++)
     {
-        const container = document.querySelector('#container');
-        const row= document.createElement('div');
+        row= document.createElement('div');
         container.append(row);
+        row.classList.add("test");
         for(let j=1;j<=25;j++)
         {     
             const box = document.createElement('div');
@@ -26,20 +29,21 @@ document.querySelector('#size');
 size.addEventListener('click', (event) => {
         s = prompt("enter size");
         if(s <= 64) {
-            const container = document.querySelector('#container');
-            container.removeChild(row); 
-            generate();
+            let rows = container.querySelectorAll('.test')
+            rows.forEach((row) => {row.remove()})
+            generate(s);
         }
         else    
             alert("Oops, try something lower.");
 });
 
-function generate()
+function generate(s)
 {
     for(let i=1; i<=s;i++)
     {
-        const container = document.querySelector('#container');
+        //row.querySelector('row');
         const row= document.createElement('div');
+        row.classList.add("test");
         container.appendChild(row);
         for(let j=1;j<=s;j++)
         {     
