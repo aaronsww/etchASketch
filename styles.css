@@ -1,9 +1,9 @@
 #container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     background-color: teal;
-    height: 960px;
-    width: 960px;
+    height: 680px;
+    width: 680px;
 }
 .fill{
     background-color: black;
@@ -21,4 +21,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+#colorPicker{
+    font-size: 25px;
+}
+#rgb{
+    font-size: 25px;
+}
+#clear{
+    font-size: 25px;
+}
+#size{
+    font-size: 25px;
+}
+.cr{
+    padding: 40px;
+    background-color: turquoise ;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size:  17px;
+    color: #F9FAF8;
+    text-align: center;
+    font-family: 'Albert Sans', sans-serif;
 }
