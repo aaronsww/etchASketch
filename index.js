@@ -1,6 +1,6 @@
 let row;
 const container = document.querySelector('#container');
-let s=25;
+let s=40;
 
 function firstGrid()
 {
