@@ -55,25 +55,25 @@ function generate(s)
             box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
-            });
+            }); 
         }
     }       
 }
+  
+const randColor = () =>  {
+    return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
+}
 
-document.querySelector('#clear'); 
-clear.addEventListener('click', eraser);
-
-function eraser()
-{
+document.querySelector('#rgb'); 
+rgb.addEventListener('click', (event) => {
     let boxes = container.querySelectorAll('.erase')
-    boxes.forEach((box) => {
-        box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
-        box.style.borderColor = "black";
-        });
-    let rows = container.querySelectorAll('.test')
-    rows.forEach((row) => {row.remove()})
-    generate(s);
-}   
+    boxes.forEach((box) => { 
+        box.addEventListener('mouseenter', (event) => {
+            let colorString = randColor();
+            box.style.cssText = ` border: 2px solid;background-color: ${colorString}`;
+            });
+    })
+});
 
 document.querySelector('#rubber'); 
 rubber.addEventListener('click', (event) => {
@@ -83,4 +83,19 @@ rubber.addEventListener('click', (event) => {
             box.classList.add("wash");
             });
     })
-});
+}); 
+
+document.querySelector('#clear'); 
+clear.addEventListener('click', eraseAll);
+
+function eraseAll()
+{
+    let boxes = container.querySelectorAll('.erase')
+    boxes.forEach((box) => {
+        box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
+        box.style.borderColor = "black";
+        });
+    let rows = container.querySelectorAll('.test')
+    rows.forEach((row) => {row.remove()})
+    generate(s);
+} 
