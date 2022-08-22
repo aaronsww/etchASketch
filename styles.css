@@ -16,7 +16,7 @@
     font-size: 105px;
     margin-bottom: 10px;
     font-family: 'Silkscreen', cursive; 
-   /*  font-family: 'Luckiest Guy', cursive; */
+    color: #5257e5;
 }
 .flexMain{
    display: flex;
@@ -30,32 +30,62 @@
     margin-right: 30px;
     height: 350px;
     padding: 10px;
-    background-color: #00676e;
+    background-color: #7371fc;
     border-radius: 7px;
+    box-shadow: 2.5px 5px 8px #888888; 
 }
 .allBtn{
     font-size: 25px;
+    color: #84ffc9;
+    border: 2px solid #84ffc9;
     padding: 10px 24px;
     width: 170px;
     font-family: 'Chelsea Market', cursive;
+    background-color: #aab2ff;
+    border-radius: 4px;
 }
+.allBtn:hover {
+    background-color: #80ffe8; 
+    color: #7371fc;
+}
+/* #colorPicker{
+    border: 2px solid #84ffc9;
+}
+#rgb{
+    border: 2px solid #8af2d2;
+}
+#rubber{
+    border: 2px solid #91e5db;
+}
+#clear{
+    border: 2px solid #97d9e4;
+}
+*/
 #size{
     font-size: 25px;
     padding: 10px 24px;
     font-family: 'Chelsea Market', cursive;
+    border: 3px solid #97d9e4;
+    background-color: #aab2ff;
+    color: #84ffc9;
+    border-radius: 4px; 
+}
+#size:hover {
+    background-color: #80ffe8; 
+    color: #7371fc;
 }
 .cr{
     padding: 40px;
-    background-color: #00676e;
+    background-color: #7371fc;
     margin-top: 40px;
     margin-bottom: -10px;
     margin-left: -10px;
     margin-right: -10px;
     font-size:  17px;
-    color: black;
+    color: #aab2ff;
     text-align: center;
     font-family: 'Chelsea Market', cursive;
 }
 .wash{
-    background-color: teal;
+    background-color: #F9FBFF;
 }

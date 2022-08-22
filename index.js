@@ -15,7 +15,7 @@ function firstGrid()
             box.textContent = ""+i;
             row.appendChild(box);
             box.style.cssText = ' border: 2px solid;'; 
-            box.style.borderColor = "red";
+            box.style.borderColor = "black";
             box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
@@ -51,7 +51,7 @@ function generate(s)
             box.textContent = ""+i;
             row.append(box);
             box.style.cssText = ' border: 2px solid;'; 
-            box.style.borderColor = "red";
+            box.style.borderColor = "black";
             box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
@@ -67,8 +67,8 @@ function eraser()
 {
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => {
-        box.style.cssText = ' border: 2px solid; background-color: teal;'; 
-        box.style.borderColor = "red";
+        box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
+        box.style.borderColor = "black";
         });
     let rows = container.querySelectorAll('.test')
     rows.forEach((row) => {row.remove()})
