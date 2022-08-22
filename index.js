@@ -10,7 +10,7 @@ function firstGrid()
         container.append(row);
         row.classList.add("test");
         for(let j=1;j<=s;j++)
-        {     
+        {   1  
             const box = document.createElement('div');
             box.textContent = ""+i;
             row.appendChild(box);
@@ -75,3 +75,12 @@ function eraser()
     generate(s);
 }   
 
+document.querySelector('#rubber'); 
+rubber.addEventListener('click', (event) => {
+    let boxes = container.querySelectorAll('.erase')
+    boxes.forEach((box) => { 
+        box.addEventListener('mouseenter', (event) => {
+            box.classList.add("wash");
+            });
+    })
+});

@@ -11,7 +11,8 @@
 .header{
     display: flex;
     justify-content: center;
-    
+    font-size: 70px;
+    margin-bottom: 10px;
 }
 .flexMain{
    display: flex;
@@ -24,7 +25,7 @@
     align-items: center;
     justify-content: space-around;
     margin-right: 30px;
-    height: 300px;
+    height: 350px;
     padding: 10px;
     background-color: blueviolet;
     border-radius: 7px;
@@ -48,4 +49,7 @@
     color: #F9FAF8;
     text-align: center;
     font-family: 'Albert Sans', sans-serif;
+}
+.wash{
+    background-color: teal;
 }
