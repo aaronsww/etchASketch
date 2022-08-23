@@ -1,3 +1,3 @@
 # etchASketch
 
-<a href="https://github.com/aaronsww/etchASketch">github.com/aaronsww/etchASketch</a>
+<a href="https://aaronsww.github.io/etchASketch">github.com/aaronsww/etchASketch</a>
