@@ -80,7 +80,7 @@ rubber.addEventListener('click', (event) => {
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
-            box.classList.add("wash");
+            box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
             });
     })
 }); 
