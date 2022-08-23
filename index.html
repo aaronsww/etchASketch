@@ -17,13 +17,22 @@
       href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="background-color: #a594f9;">
+  <body style="background-color: #a594f9">
     <div class="header">Etch-a-Sketch</div>
     <div class="flexMain">
       <div class="flexSide">
-        <button id="colorPicker" class="allBtn">Colour</button>
+        <div class="smallFlex">
+          <div id="colorPicker">
+            Colour
+          </div>
+          <div class="color-picker"></div>
+        </div>
         <button id="rgb" class="allBtn">Rainbow</button>
         <button id="rubber" class="allBtn">Eraser</button>
         <button id="clear" class="allBtn">Clear</button>
@@ -40,6 +49,7 @@
         <img src="images/gitty2.png" alt="" style="height: 30px" /> </a
       >for The Odin Project 2022
     </p>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

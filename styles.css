@@ -7,7 +7,34 @@
     box-shadow: 2.5px 5px 8px #888888; 
 }
 .fill{
-    background-color: black;
+    background-color: #42445A;
+}
+.smallFlex{
+    display: flex;
+    font-size: 25px;
+    color: #84ffc9;
+    border: 2px solid #97d9e4;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: 170px;
+    font-family: 'Chelsea Market', cursive;
+    background-color: #aab2ff;
+    border-radius: 4px;
+    margin: -10px;
+    justify-content: center;
+    margin-top: 2px;
+}
+.smallFlex:hover {
+    background-color: #80ffe8; 
+    color: #7371fc;
+}
+#colorPicker{
+    padding-right: 10px;
+    
+}
+.color-picker{
+    padding: 10px;
+    margin-right: -10px;
 }
 .header{
     margin-top: -25px;
@@ -26,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between ;
     margin-right: 30px;
     height: 350px;
     padding: 10px;
@@ -37,7 +64,7 @@
 .allBtn{
     font-size: 25px;
     color: #84ffc9;
-    border: 2px solid #84ffc9;
+    border: 2px solid #97d9e4;
     padding: 10px 24px;
     width: 170px;
     font-family: 'Chelsea Market', cursive;
@@ -61,6 +88,7 @@
     border: 2px solid #97d9e4;
 }
 */
+
 #size{
     font-size: 25px;
     padding: 10px 24px;
