@@ -74,6 +74,9 @@
     background-color: #80ffe8; 
     color: #7371fc;
 }
+.onClickButton{
+    border: 3px solid #aab2ff; background-color: #80ffe8; color: #7371fc;
+}
 .cr{
     padding: 40px;
     background-color: #7371fc;

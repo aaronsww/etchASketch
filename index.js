@@ -28,6 +28,7 @@ firstGrid();
 
 document.querySelector('#size'); 
 size.addEventListener('click', (event) => {
+        size.classList.add("onClickButton")
         s = prompt("enter size");
         if(s <= 64) {
             let rows = container.querySelectorAll('.test')
@@ -66,6 +67,8 @@ const randColor = () =>  {
 
 document.querySelector('#rgb'); 
 rgb.addEventListener('click', (event) => {
+    rubber.classList.remove("onClickButton")
+    rgb.classList.add("onClickButton")
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
@@ -77,6 +80,8 @@ rgb.addEventListener('click', (event) => {
 
 document.querySelector('#rubber'); 
 rubber.addEventListener('click', (event) => {
+    rgb.classList.remove("onClickButton")
+    rubber.classList.add("onClickButton")
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
@@ -90,6 +95,8 @@ clear.addEventListener('click', eraseAll);
 
 function eraseAll()
 {
+    rubber.classList.remove("onClickButton")
+    rgb.classList.remove("onClickButton")   
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => {
         box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
