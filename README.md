@@ -1,4 +1,4 @@
-# etchASketch
+# Etch-A-Sketch
 
 <a href="https://aaronsww.github.io/etchASketch">Live Demonstration.</a>
 
@@ -15,5 +15,9 @@ In this project, I made a browser version of something between a sketchpad and a
     <li>Clear current exisitng sketch to start a fresh.</li>
     <li>Adjust thickness/ pixel density of your pen by entering a number of your convenience.</li>
 </ul>
+
 ### In Action
 
+## Credits
+
+Link to the<a href="https://github.com/Simonwep/pickr#getting-started"> color picker</a> I used.
