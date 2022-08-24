@@ -78,11 +78,7 @@ document.querySelector('#rgb');
 rgb.addEventListener('click', (event) => {
     rubber.classList.remove("onClickButton")
     colorPicker.classList.remove("onClickButton")
-    rgb.classList.add("onClickButton")
-    let rows = container.querySelectorAll('.test')
-        rows.forEach((row) => { 
-             row.classList.add("boxFlex");
-        })     
+    rgb.classList.add("onClickButton") 
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
@@ -97,10 +93,6 @@ rubber.addEventListener('click', (event) => {
     rgb.classList.remove("onClickButton")
     colorPicker.classList.remove("onClickButton")
     rubber.classList.add("onClickButton")
-    let rows = container.querySelectorAll('.test')
-    rows.forEach((row) => { 
-         row.classList.add("boxFlex");
-    })     
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
@@ -171,7 +163,7 @@ pickr.on('change', (color, instance) => {
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
-            box.style.cssText = ` border: 2px solid;background-color: ${rgbaColor}`;
+            box.style.cssText = ` flex :1 ;background-color: ${rgbaColor}`;
             });
     })
 })
