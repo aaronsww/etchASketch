@@ -10,18 +10,21 @@ function firstGrid()
         container.append(row);
         row.classList.add("test");
         for(let j=1;j<=s;j++)
-        {   1  
+        {     
             const box = document.createElement('div');
-            box.textContent = ""+i;
+            //box.textContent = ""+i;
             row.appendChild(box);
-            box.style.cssText = ' border: 2px solid;'; 
-            box.style.borderColor = "black";
+            box.style.cssText = 'flex : 1; height: auto; width: auto;'; 
             box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
             });
         }
-    }       
+    }     
+    let rows = container.querySelectorAll('.test')
+        rows.forEach((row) => { 
+             row.classList.add("boxFlex");
+        })     
 }
 
 firstGrid();
@@ -32,7 +35,7 @@ size.addEventListener('click', (event) => {
     colorPicker.classList.remove("onClickButton")
     rgb.classList.remove("onClickButton")
         size.classList.add("onClickButton")
-        s = prompt("enter size");
+        s = prompt("Input a number between 0 and 65");
         if(s <= 64) {
             let rows = container.querySelectorAll('.test')
             rows.forEach((row) => {row.remove()})
@@ -52,18 +55,21 @@ function generate(s)
         for(let j=1;j<=s;j++)
         {     
             const box = document.createElement('div');
-            box.textContent = ""+i;
+            //box.textContent = ""+i;
             row.append(box);
-            box.style.cssText = ' border: 2px solid;'; 
-            box.style.borderColor = "black";
+            box.style.cssText = 'flex: 1; height: auto; width: auto;'; 
             box.classList.add("erase");
             box.addEventListener('mouseenter', (event) => {
             box.classList.add("fill");
             }); 
         }
-    }       
+    }   
+    let rows = container.querySelectorAll('.test')
+        rows.forEach((row) => { 
+             row.classList.add("boxFlex");
+        })         
 }
-  
+
 const randColor = () =>  {
     return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
 }
@@ -73,11 +79,15 @@ rgb.addEventListener('click', (event) => {
     rubber.classList.remove("onClickButton")
     colorPicker.classList.remove("onClickButton")
     rgb.classList.add("onClickButton")
+    let rows = container.querySelectorAll('.test')
+        rows.forEach((row) => { 
+             row.classList.add("boxFlex");
+        })     
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
             let colorString = randColor();
-            box.style.cssText = ` border: 2px solid;background-color: ${colorString}`;
+            box.style.cssText = `flex: 1; background-color: ${colorString}`;
             });
     })
 });
@@ -87,10 +97,14 @@ rubber.addEventListener('click', (event) => {
     rgb.classList.remove("onClickButton")
     colorPicker.classList.remove("onClickButton")
     rubber.classList.add("onClickButton")
+    let rows = container.querySelectorAll('.test')
+    rows.forEach((row) => { 
+         row.classList.add("boxFlex");
+    })     
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
-            box.style.cssText = ' border: 2px solid; background-color: #F9FBFF;'; 
+            box.style.cssText = 'flex : 1; background-color: #F9FBFF;'; 
             });
     })
 }); 

@@ -1,6 +1,7 @@
 #container{
     display: flex;
-    flex-wrap:wrap;
+   /* flex-wrap:wrap; */
+   align-items: stretch;
     background-color:  #F9FBFF;
     height: 680px;
     width: 680px;
@@ -8,6 +9,12 @@
 }
 .fill{
     background-color: #42445A;
+}
+.boxFlex{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: -2px;
 }
 .smallFlex{
     display: flex;
@@ -75,20 +82,6 @@
     background-color: #80ffe8; 
     color: #7371fc;
 }
-/* #colorPicker{
-    border: 2px solid #84ffc9;
-}
-#rgb{
-    border: 2px solid #8af2d2;
-}
-#rubber{
-    border: 2px solid #91e5db;
-}
-#clear{
-    border: 2px solid #97d9e4;
-}
-*/
-
 #size{
     font-size: 25px;
     padding: 10px 24px;
@@ -116,4 +109,5 @@
     color: #aab2ff;
     text-align: center;
     font-family: 'Chelsea Market', cursive;
+   
 }
