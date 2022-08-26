@@ -18,6 +18,8 @@ In this project, I made a browser version of something between a sketchpad and a
 
 ### In Action
 
+<img src="images/Etch-a-Sketch - Google Chrome 26-08-2022 15_19_47.png" alt="">
+
 ## Credits
 
 Link to the<a href="https://github.com/Simonwep/pickr#getting-started"> color picker</a> I used.
