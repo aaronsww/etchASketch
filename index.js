@@ -160,6 +160,8 @@ const pickr = Pickr.create({
 
 pickr.on('change', (color, instance) => {
     const rgbaColor = color.toRGBA().toString();
+    rgb.classList.remove("onClickButton")
+    rubber.classList.remove("onClickButton")
     let boxes = container.querySelectorAll('.erase')
     boxes.forEach((box) => { 
         box.addEventListener('mouseenter', (event) => {
@@ -172,5 +174,4 @@ document.querySelector('#colorPicker');
 colorPicker.addEventListener('click', (event) => {
     rubber.classList.remove("onClickButton")
     rgb.classList.remove("onClickButton")
-    colorPicker.classList.add("onClickButton")
 });
